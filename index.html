@@ -6,6 +6,22 @@
     <title>Bionutrex</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<style>
+    .ci {
+        width: 200px; /* Adjust as needed */
+        height: auto;
+    }
+    .swiper-slide {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+</style>
 </head>
 <body class="text-[#1E1E1E] font-arial">
     <div class="nav-container w-[100%] | 2xl:text-[1.2em]" data-aos="fade-down" data-aos-duration="1000">
@@ -18,7 +34,7 @@
                     <a href="#">We Are</a>
                 </li>
                 <li class="list-none px-2 py-1 transition hover:bg-[#1E1E1E] hover:text-white" data-aos="fade-right" data-aos-delay="300">
-                    <a href="#">Suplementos</a>
+                    <a href="productos.html">Suplementos</a>
                 </li>
             </div>
             <div class="title-nav | lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2" data-aos="zoom-in" data-aos-duration="1000">
@@ -101,6 +117,58 @@
             </div>
         </div>
     </div>
+    <div class="swiper mb-20" data-aos="fade-up" data-aos-duration="1000">
+        <div class="swiper-wrapper">
+          <div class="flex justify-around items-center swiper-slide" data-aos="fade-right" data-aos-delay="100">
+            <a href="https://www.muscletech.com/" target="_blank">
+              <img class="ci" src="https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/msc/msc70573/y/60.jpg" alt="">
+            </a>
+            <a href="https://www.yaoca.com/" target="_blank">
+              <img class="ci" src="https://i5.walmartimages.com.mx/mg/gm/1p/images/product-images/img_large/00750303617158l.jpg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt="">
+            </a>
+            <a href="https://dragonpharmalabs.com/en-mx" target="_blank">
+              <img class="ci" src="https://www.afsupplements.com.mx/cdn/shop/files/Creatina.webp?v=1696257634" alt="">
+            </a>
+          </div>
+    
+    
+          <div class="flex justify-between items-center swiper-slide" data-aos="fade-left" data-aos-delay="200">
+            <a href="https://www.muscletech.com/" target="_blank">
+              <img class="ci" src="https://www.evolutionreal.mx/cdn/shop/files/800g_WP100_NEW_mockup-oct23_Chocolate_Frente_5a98f1e2-9929-4e0d-abc4-0653b1299299.png?v=1715977363" alt="">
+            </a>
+    
+            <a href="https://www.yaoca.com/" target="_blank">
+              <img class="ci" src="https://www.scenitnutrition.com/cdn/shop/products/Best_Whey_Protein_bote_2kg_8L_White_Chocolate_front02.png?v=1703411920" alt="">
+            </a>
+    
+            <a href="https://dragonpharmalabs.com/en-mx" target="_blank">
+              <img class="ci" src="https://www.evolutionreal.mx/cdn/shop/files/Proteina-WP100-Cookies.png?v=1742507623&width=1445" alt="">
+            </a>
+          </div>
+          <div class="flex justify-around items-center swiper-slide" data-aos="fade-right" data-aos-delay="300">
+            <a href="https://www.muscletech.com/" target="_blank">
+              <img class="ci" src="https://victoryendurance.com/wp-content/uploads/2020/05/fat-burner.png" alt="">
+            </a>
+    
+            <a href="https://www.yaoca.com/" target="_blank">
+              <img class="ci" src="https://ostrovit.com/hpeciai/fc1ca9a3acd0c0e0eaa73c985083a1bc/24454_1.png" alt="">
+            </a>
+    
+            <a href="https://dragonpharmalabs.com/en-mx" target="_blank">
+              <img class="ci" src="https://www.checkers.co.za/medias/10668563EA-checkers515Wx515H?context=bWFzdGVyfGltYWdlc3wxODY0MjZ8aW1hZ2UvcG5nfGltYWdlcy/hbf/h14/9508484612126.png|ad6348c1e284f3c794e9fa0e84e1032e32a0794377bef5cbfd368c4a356ffce9" alt="">
+            </a>
+          </div>
+    
+        </div>
+        <div class="h-20">
+            <div class="swiper-pagination"></div>
+    
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+    </div>
+  </div>
     <div class="container-contact h-[80vh] mx-5 mt-20 flex flex-col gap-20 | lg:flex-row items-center justify-center" data-aos="fade-up" data-aos-duration="1000">
         <div class="left-container w-full h-[20vh] bg-[url(/img/contact-banner.jpg)] bg-cover bg-center rounded-2xl | lg:w-[30%] lg:h-full" data-aos="fade-right" data-aos-delay="100"></div>
         <div class="mid-container flex flex-col justify-center items-center gap-10 | lg:w-[30%] lg:h-full" data-aos="zoom-in" data-aos-delay="200">
@@ -127,7 +195,7 @@
             </h6>
             <p class="text-[.8em] | lg:text-[1em]">powered by Quantum Code</p>
         </div>
-        <div class="menu-footer text-white hidden | lg:flex lg:gap-10 lg:text-[1.2em]" data-aos="fade-down" data-aos-delay="200">
+        <div class="menu-footer text-white hidden | lg:flex lg:gap-10 lg:text-[1.2em]">
             <li class="list-none px-2 py-1">
                 <a href="#">Inicio</a>
             </li>
@@ -135,10 +203,10 @@
                 <a href="#">We Are</a>
             </li>
             <li class="list-none px-2 py-1">
-                <a href="#">Suplementos</a>
+                <a href="productos.html">Suplementos</a>
             </li>
         </div>
-        <div class="social-media flex justify-center items-center gap-5" data-aos="fade-down" data-aos-delay="300">
+        <div class="social-media flex justify-center items-center gap-5">
             <p class="hidden | lg:flex lg:text-[1.3em]">¡Síguenos!</p>
             <div class="div">
                 <a href="#"><img class="w-[30px] | lg:w-[45px]" src="img/instagram-svgrepo-com.svg" alt="" /></a>
@@ -156,5 +224,7 @@
     <script>
         AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>We Are</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!--Inicia Nav-->
+    <div class="bg-[#1E1E1E] nav-container w-[100%] | 2xl:text-[1.2em]">
+      <nav
+        class="flex mx-[20px] h-[15vh] justify-between items-center | lg:mx-[50px] | xl:mx-[70px]"
+      >
+        <!--Menu-nav-->
+        <div class="menu hidden | 2xl:gap-10 | lg:flex lg:gap-5">
+          <li
+            class="list-none px-2 py-1 text-white transition hover:bg-white hover:text-black"
+          >
+            <a href="#">Inicio</a>
+          </li>
+          <li
+            class="list-none px-2 py-1 text-white transition hover:bg-white hover:text-black"
+          >
+            <a href="#">We Are</a>
+          </li>
+          <li
+            class="list-none px-2 py-1 text-white transition hover:bg-white hover:text-black"
+          >
+            <a href="#">Suplementos</a>
+          </li>
+        </div>
+        <!--title-nav-->
+        <div
+          class="title-nav | lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2"
+        >
+          <p class="text-[1.2em] text-white | lg:text-[2em]">
+            BIO<b>NUTREX</b>
+          </p>
+        </div>
+        <!--btn contacto-->
+        <div class="btn-contact">
+          <button
+            id="contact"
+            class="px-7 py-2 border border-white text-white rounded-2xl transition hover:bg-white hover:text-black hover:cursor-pointer hover:text-white | md:px-10 md:py-3"
+          >
+            Contacto
+          </button>
+        </div>
+      </nav>
+    </div>
+    <!--Termina nav-->
+
+    <!--Inicia sección hitos-->
+    <div
+      class="hitos flex flex-col items-center justify-center bg-[#1E1E1E] text-white w-full"
+    >
+      <div class="title-hitos">
+        <h6 class="text-[4em] | md:text-[7em] | xl:text-[9em]">
+          <b>BIONUTREX</b>
+        </h6>
+      </div>
+      <div class="hitos-descrip flex text-center gap-5">
+        <div class="left">
+          <p class="text-[2em] | md:text-[2.5em] | 2xl:text-[3.5em]">+1K</p>
+          <p class="text-[1.5em] | 2xl:text-[2em]">
+            <i>Clientes satisfechos</i>
+          </p>
+        </div>
+        <div class="mid">
+          <p class="text-[2em] | md:text-[2.5em] | 2xl:text-[3.5em]">+10K</p>
+          <p class="text-[1.5em] | 2xl:text-[2em]">
+            <i>Productos distribuidos</i>
+          </p>
+        </div>
+        <div class="right">
+          <p class="text-[2em] | md:text-[2.5em] | 2xl:text-[3.5em]">+5</p>
+          <p class="text-[1.5em] | 2xl:text-[2em]">
+            <i>Años de experiencia</i>
+          </p>
+        </div>
+      </div>
+      <div class="img-hitos flex justify-center">
+        <img
+          class="m-20 w-[50%] | lg:w-[50%] | 2xl:w-[65%]"
+          src="img/cookieitholatesinmarcos.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <!--Inicia sección hitos-->
+
+    <!--Inicia banner-->
+    <div class="w-full mt-10 h-[50vh] p-[10px]">
+      <div
+        class="w-full h-full bg-[url('img/banner-running.jpg')] bg-cover bg-center relative overflow-hidden rounded-2xl before:content-[''] before:absolute before:inset-0 before:bg-black before:opacity-50"
+      >
+        <div
+          class="absolute inset-0 flex flex-col items-start justify-center text-white z-10"
+        >
+          <h1 class="text-[2.5em] font-bold px-10 | xl:text-[3.5em]">
+            EL MEJOR ALIADO SIEMPRE A TU ALCANCE
+          </h1>
+          <p class="text-[1.3em] px-10 | xl:text-[1.6em]">
+            En BIONUTREX, ofrecemos suplementos de calidad premium, respaldo
+            científico y atención personalizada. Supera tus límites con el
+            aliado que realmente entiende tus metas.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--Termina banner-->
+  </body>
+</html>

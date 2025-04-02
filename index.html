@@ -1,230 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bionutrex</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
-<style>
-    .ci {
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <style>
+      .ci {
         width: 200px; /* Adjust as needed */
         height: auto;
-    }
-    .swiper-slide {
+      }
+      .swiper-slide {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-    }
-</style>
-</head>
-<body class="text-[#1E1E1E] font-arial">
-    <div class="nav-container w-[100%] | 2xl:text-[1.2em]" data-aos="fade-down" data-aos-duration="1000">
-        <nav class="flex mx-[20px] h-[15vh] justify-between items-center | lg:mx-[50px] | xl:mx-[70px]">
-            <div class="menu hidden | 2xl:gap-10 | lg:flex lg:gap-5">
-                <li class="list-none px-2 py-1 transition hover:bg-[#1E1E1E] hover:text-white" data-aos="fade-right" data-aos-delay="100">
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li class="list-none px-2 py-1 transition hover:bg-[#1E1E1E] hover:text-white" data-aos="fade-right" data-aos-delay="200">
-                    <a href="#">We Are</a>
-                </li>
-                <li class="list-none px-2 py-1 transition hover:bg-[#1E1E1E] hover:text-white" data-aos="fade-right" data-aos-delay="300">
-                    <a href="productos.html">Suplementos</a>
-                </li>
-            </div>
-            <div class="title-nav | lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2" data-aos="zoom-in" data-aos-duration="1000">
-                <p class="text-[1.2em] | lg:text-[2em]">BIO<b>NUTREX</b></p>
-            </div>
-            <div class="btn-contact" data-aos="fade-left" data-aos-delay="200">
-                <button id="contact" class="px-7 py-2 border rounded-2xl transition hover:bg-[#1E1E1E] hover:cursor-pointer hover:text-white">
-                    <a href="contacto.html">Contacto</a>
-                </button>
-            </div>
-        </nav>
+      }
+    </style>
+  </head>
+  <body class="text-[#1E1E1E] font-arial">
+    <!--Inicia Nav-->
+    <div
+      class="nav-container w-[100%] | 2xl:text-[1.2em]"
+      data-aos="fade-down"
+      data-aos-duration="1000"
+    >
+      <nav
+        class="flex mx-[20px] h-[15vh] justify-between items-center | lg:mx-[50px] | xl:mx-[70px]"
+      >
+        <div class="menu hidden | 2xl:gap-10 | lg:flex lg:gap-5">
+          <li
+            class="list-none px-2 py-1 transition hover:bg-[#1E1E1E] hover:text-white"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
+            <a href="index.html">Inicio</a>
+          </li>
+          <li
+            class="list-none px-2 py-1 transition hover:bg-[#1E1E1E] hover:text-white"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
+            <a href="weare.html">We Are</a>
+          </li>
+          <li
+            class="list-none px-2 py-1 transition hover:bg-[#1E1E1E] hover:text-white"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
+            <a href="productos.html">Suplementos</a>
+          </li>
+        </div>
+        <div
+          class="title-nav | lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+        >
+          <p class="text-[1.2em] | lg:text-[2em]">BIO<b>NUTREX</b></p>
+        </div>
+        <div class="btn-contact" data-aos="fade-left" data-aos-delay="200">
+          <button
+            id="contact"
+            class="px-7 py-2 border rounded-2xl transition hover:bg-[#1E1E1E] hover:cursor-pointer hover:text-white"
+          >
+            <a href="contacto.html">Contacto</a>
+          </button>
+        </div>
+      </nav>
     </div>
-    <div class="banner-container w-[100%]" data-aos="fade-up" data-aos-duration="1000">
-        <section class="mx-[10px] h-[vh]">
-            <div class="top-content h-auto w-fu70ll mb-10 rounded-2xl flex flex-col items-center justify-center |">
-                <p class="text-[1em] text-center | lg:text-[1.5em]" data-aos="fade-down" data-aos-delay="100">
-                    Alcanza tu máximo potencial.
-                </p>
-                <h1 class="text-[3em] text-center | md:text-[4em] | lg:text-[5em] | 2xl:text-[8em] 2xl:px-[.5em]" data-aos="zoom-in" data-aos-delay="200">
-                    <b>NUTRICIÓN DEPORTIVA DE ALTO RENDIMIENTO</b>
-                </h1>
-            </div>
+    <!--Termina nav-->
 
-            <div class="relative banner h-[43vh] w-full rounded-2xl flex flex-col items-center justify-center overflow-hidden | 2xl:h-[60vh]">
-                <video class="absolute inset-0 w-full h-full object-cover" autoplay muted loop>
-                    <source src="img/vid-banner.mp4" type="video/mp4" />
-                    Tu navegador no soporta video.
-                </video>
-
-                <div class="absolute inset-0 bg-black opacity-60 brightness-[25%] rounded-2xl"></div>
-
-                <h1 class="relative text-[3em] text-center text-white z-10 | md:text-[6em]" data-aos="fade-up" data-aos-delay="300">
-                    <b>FUERZA EN CADA GRAMO.</b>
-                </h1>
-
-                <p class="relative flex mt-15 justify-end items-end text-end px-5 text-white | lg:text-[1.5em] | xl:px-0" data-aos="fade-up" data-aos-delay="400">
-                    Potencia tu fuerza y recuperacion con BIONUTREX. Suplementos de alta calidad para alcanzar tu máximo rendimiento en cada entrenamiento.
-                </p>
-            </div>
-        </section>
-    </div>
-    <div class="container-offer mt-10 h-full | lg:bg-[url(/img/offer-bg.jpg)] lg:bg-cover lg:bg-center lg:mx-[10px] lg:rounded-2xl" data-aos="fade-up" data-aos-duration="1000">
-        <div class="top-content-offer flex flex-col text-start justify-center items-center | lg:justify-start lg:items-start">
-            <h4 class="text-black text-[3em] text-center | lg:text-white lg:text-start lg:mt-5 lg:px-[30px]" data-aos="fade-right" data-aos-delay="100">
-                ¿Qué es lo que ofrecemos?
-            </h4>
-            <p class="text-black text-center text-[1.5em] mt-5 px-[30px] | lg:text-white lg:text-start" data-aos="fade-right" data-aos-delay="200">
-                En BIONUTREX, combinamos calidad, innovación y compromiso para acompañarte en cada desafío.
-            </p>
+    <!--Inicia banner-->
+    <div
+      class="banner-container w-[100%]"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <section class="mx-[10px] h-[vh]">
+        <div
+          class="top-content h-auto w-fu70ll mb-10 rounded-2xl flex flex-col items-center justify-center |"
+        >
+          <p
+            class="text-[1em] text-center | lg:text-[1.5em]"
+            data-aos="fade-down"
+            data-aos-delay="100"
+          >
+            Alcanza tu máximo potencial.
+          </p>
+          <h1
+            class="text-[3em] text-center | md:text-[4em] | lg:text-[5em] | 2xl:text-[8em] 2xl:px-[.5em]"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <b>NUTRICIÓN DEPORTIVA DE ALTO RENDIMIENTO</b>
+          </h1>
         </div>
 
-        <div class="bottom-content-offer w-full h-full flex flex-col justify-start items-center px-10px | lg:flex lg:flex-row lg:justify-center lg:mt-10">
-            <div class="w-[80%] h-[350px] flex flex-col items-start justify-center bg-[#F2F2F2] mx-[50px] mt-20 rounded-2xl | lg:m-10 lg:w-[400px] lg:h-[350px] lg:mt-0 lg:mx-[25px]" data-aos="zoom-in" data-aos-delay="100">
-                <img src="" alt="" />
-                <h6 class="text-[2em] px-10">Calidad Premium</h6>
-                <p class="text-[1.3em] px-10">
-                    Suplementos elaborados con ingredientes de la más alta calidad, respaldados por rigurosos estándares.
-                </p>
-            </div>
-            <div class="w-[80%] h-[350px] flex flex-col items-start justify-center bg-[#F2F2F2] mx-[50px] mt-5 rounded-2xl | lg:m-10 lg:w-[400px] lg:h-[350px] lg:mt-0 lg:mx-[25px]" data-aos="zoom-in" data-aos-delay="200">
-                <img src="" alt="" />
-                <h6 class="text-[2em] px-10">Innovación Constante</h6>
-                <p class="text-[1.3em] px-10">
-                    Investigamos y desarrollamos fórmulas avanzadas para optimizar tu rendimiento.
-                </p>
-            </div>
-            <div class="w-[80%] h-[350px] flex flex-col items-start justify-center bg-[#F2F2F2] mx-[50px] mt-5 rounded-2xl | lg:m-10 lg:w-[400px] lg:h-[350px] lg:mt-0 lg:mx-[25px]" data-aos="zoom-in" data-aos-delay="300">
-                <img src="" alt="" />
-                <h6 class="text-[2em] px-10">Compromiso deportivo</h6>
-                <p class="text-[1.3em] px-10">
-                    Acompañamos a atletas y entusiastas del fitness en cada etapa de su progreso.
-                </p>
-            </div>
-            <div class="w-[80%] h-[350px] flex flex-col items-start justify-center bg-[#F2F2F2] mx-[50px] mt-5 rounded-2xl | lg:m-10 lg:w-[400px] lg:h-[350px] lg:mt-0 lg:mx-[25px]" data-aos="zoom-in" data-aos-delay="400">
-                <img src="" alt="" />
-                <h6 class="text-[2em] px-10">Distribución Confiable</h6>
-                <p class="text-[1.3em] px-10">
-                    Entrega eficiente y segura para que tus suplementos lleguen justo cuando lo necesitas.
-                </p>
-            </div>
+        <div
+          class="relative banner h-[43vh] w-full rounded-2xl flex flex-col items-center justify-center overflow-hidden | 2xl:h-[60vh]"
+        >
+          <video
+            class="absolute inset-0 w-full h-full object-cover"
+            autoplay
+            muted
+            loop
+          >
+            <source src="img/vid-banner.mp4" type="video/mp4" />
+            Tu navegador no soporta video.
+          </video>
+
+          <div
+            class="absolute inset-0 bg-black opacity-60 brightness-[25%] rounded-2xl"
+          ></div>
+
+          <h1
+            class="relative text-[3em] text-center text-white z-10 | md:text-[6em]"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <b>FUERZA EN CADA GRAMO.</b>
+          </h1>
+
+          <p
+            class="relative flex mt-15 justify-end items-end text-end px-5 text-white | lg:text-[1.5em] | xl:px-0"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            Potencia tu fuerza y recuperacion con BIONUTREX. Suplementos de alta
+            calidad para alcanzar tu máximo rendimiento en cada entrenamiento.
+          </p>
         </div>
+      </section>
     </div>
-    <div class="swiper mb-20" data-aos="fade-up" data-aos-duration="1000">
-        <div class="swiper-wrapper">
-          <div class="flex justify-around items-center swiper-slide" data-aos="fade-right" data-aos-delay="100">
-            <a href="https://www.muscletech.com/" target="_blank">
-              <img class="ci" src="https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/msc/msc70573/y/60.jpg" alt="">
-            </a>
-            <a href="https://www.yaoca.com/" target="_blank">
-              <img class="ci" src="https://i5.walmartimages.com.mx/mg/gm/1p/images/product-images/img_large/00750303617158l.jpg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt="">
-            </a>
-            <a href="https://dragonpharmalabs.com/en-mx" target="_blank">
-              <img class="ci" src="https://www.afsupplements.com.mx/cdn/shop/files/Creatina.webp?v=1696257634" alt="">
-            </a>
-          </div>
-    
-    
-          <div class="flex justify-between items-center swiper-slide" data-aos="fade-left" data-aos-delay="200">
-            <a href="https://www.muscletech.com/" target="_blank">
-              <img class="ci" src="https://www.evolutionreal.mx/cdn/shop/files/800g_WP100_NEW_mockup-oct23_Chocolate_Frente_5a98f1e2-9929-4e0d-abc4-0653b1299299.png?v=1715977363" alt="">
-            </a>
-    
-            <a href="https://www.yaoca.com/" target="_blank">
-              <img class="ci" src="https://www.scenitnutrition.com/cdn/shop/products/Best_Whey_Protein_bote_2kg_8L_White_Chocolate_front02.png?v=1703411920" alt="">
-            </a>
-    
-            <a href="https://dragonpharmalabs.com/en-mx" target="_blank">
-              <img class="ci" src="https://www.evolutionreal.mx/cdn/shop/files/Proteina-WP100-Cookies.png?v=1742507623&width=1445" alt="">
-            </a>
-          </div>
-          <div class="flex justify-around items-center swiper-slide" data-aos="fade-right" data-aos-delay="300">
-            <a href="https://www.muscletech.com/" target="_blank">
-              <img class="ci" src="https://victoryendurance.com/wp-content/uploads/2020/05/fat-burner.png" alt="">
-            </a>
-    
-            <a href="https://www.yaoca.com/" target="_blank">
-              <img class="ci" src="https://ostrovit.com/hpeciai/fc1ca9a3acd0c0e0eaa73c985083a1bc/24454_1.png" alt="">
-            </a>
-    
-            <a href="https://dragonpharmalabs.com/en-mx" target="_blank">
-              <img class="ci" src="https://www.checkers.co.za/medias/10668563EA-checkers515Wx515H?context=bWFzdGVyfGltYWdlc3wxODY0MjZ8aW1hZ2UvcG5nfGltYWdlcy/hbf/h14/9508484612126.png|ad6348c1e284f3c794e9fa0e84e1032e32a0794377bef5cbfd368c4a356ffce9" alt="">
-            </a>
-          </div>
-    
+    <!--Termina banner-->
+
+    <!--Inicia offer-->
+    <div
+      class="container-offer mt-10 h-full | lg:bg-[url(/img/offer-bg.jpg)] lg:bg-cover lg:bg-center lg:mx-[10px] lg:rounded-2xl"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div
+        class="top-content-offer flex flex-col text-start justify-center items-center | lg:justify-start lg:items-start"
+      >
+        <h4
+          class="text-black text-[3em] text-center | lg:text-white lg:text-start lg:mt-5 lg:px-[30px]"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        >
+          ¿Qué es lo que ofrecemos?
+        </h4>
+        <p
+          class="text-black text-center text-[1.5em] mt-5 px-[30px] | lg:text-white lg:text-start"
+          data-aos="fade-right"
+          data-aos-delay="200"
+        >
+          En BIONUTREX, combinamos calidad, innovación y compromiso para
+          acompañarte en cada desafío.
+        </p>
+      </div>
+
+      <div
+        class="bottom-content-offer w-full h-full flex flex-col justify-start items-center px-10px | lg:flex lg:flex-row lg:justify-center lg:mt-10"
+      >
+        <div
+          class="w-[80%] h-[350px] flex flex-col items-start justify-center bg-[#F2F2F2] mx-[50px] mt-20 rounded-2xl | lg:m-10 lg:w-[400px] lg:h-[350px] lg:mt-0 lg:mx-[25px]"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+        >
+          <img src="" alt="" />
+          <h6 class="text-[2em] px-10">Calidad Premium</h6>
+          <p class="text-[1.3em] px-10">
+            Suplementos elaborados con ingredientes de la más alta calidad,
+            respaldados por rigurosos estándares.
+          </p>
         </div>
-        <div class="h-20">
-            <div class="swiper-pagination"></div>
-    
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+        <div
+          class="w-[80%] h-[350px] flex flex-col items-start justify-center bg-[#F2F2F2] mx-[50px] mt-5 rounded-2xl | lg:m-10 lg:w-[400px] lg:h-[350px] lg:mt-0 lg:mx-[25px]"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+        >
+          <img src="" alt="" />
+          <h6 class="text-[2em] px-10">Innovación Constante</h6>
+          <p class="text-[1.3em] px-10">
+            Investigamos y desarrollamos fórmulas avanzadas para optimizar tu
+            rendimiento.
+          </p>
         </div>
+        <div
+          class="w-[80%] h-[350px] flex flex-col items-start justify-center bg-[#F2F2F2] mx-[50px] mt-5 rounded-2xl | lg:m-10 lg:w-[400px] lg:h-[350px] lg:mt-0 lg:mx-[25px]"
+          data-aos="zoom-in"
+          data-aos-delay="300"
+        >
+          <img src="" alt="" />
+          <h6 class="text-[2em] px-10">Compromiso deportivo</h6>
+          <p class="text-[1.3em] px-10">
+            Acompañamos a atletas y entusiastas del fitness en cada etapa de su
+            progreso.
+          </p>
+        </div>
+        <div
+          class="w-[80%] h-[350px] flex flex-col items-start justify-center bg-[#F2F2F2] mx-[50px] mt-5 rounded-2xl | lg:m-10 lg:w-[400px] lg:h-[350px] lg:mt-0 lg:mx-[25px]"
+          data-aos="zoom-in"
+          data-aos-delay="400"
+        >
+          <img src="" alt="" />
+          <h6 class="text-[2em] px-10">Distribución Confiable</h6>
+          <p class="text-[1.3em] px-10">
+            Entrega eficiente y segura para que tus suplementos lleguen justo
+            cuando lo necesitas.
+          </p>
+        </div>
+      </div>
     </div>
+    <!--Termina offer-->
+
+    <!--Swiper-->
+    <div class="swiper mb-20 mt-20" data-aos="fade-up" data-aos-duration="1000">
+      <h2 class="mb-10 text-center text-[2.5em]"><b>SUPLEMENTOS</b></h2>
+      <div class="swiper-wrapper">
+        <div
+          class="flex justify-around items-center swiper-slide"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        >
+          <a href="https://www.muscletech.com/" target="_blank">
+            <img
+              class="ci"
+              src="https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/msc/msc70573/y/60.jpg"
+              alt=""
+            />
+          </a>
+          <a href="https://www.yaoca.com/" target="_blank">
+            <img
+              class="ci"
+              src="https://i5.walmartimages.com.mx/mg/gm/1p/images/product-images/img_large/00750303617158l.jpg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"
+              alt=""
+            />
+          </a>
+          <a href="https://dragonpharmalabs.com/en-mx" target="_blank">
+            <img
+              class="ci"
+              src="https://www.afsupplements.com.mx/cdn/shop/files/Creatina.webp?v=1696257634"
+              alt=""
+            />
+          </a>
+        </div>
+
+        <div
+          class="flex justify-between items-center swiper-slide"
+          data-aos="fade-left"
+          data-aos-delay="200"
+        >
+          <a href="https://www.muscletech.com/" target="_blank">
+            <img
+              class="ci"
+              src="https://www.evolutionreal.mx/cdn/shop/files/800g_WP100_NEW_mockup-oct23_Chocolate_Frente_5a98f1e2-9929-4e0d-abc4-0653b1299299.png?v=1715977363"
+              alt=""
+            />
+          </a>
+
+          <a href="https://www.yaoca.com/" target="_blank">
+            <img
+              class="ci"
+              src="https://www.scenitnutrition.com/cdn/shop/products/Best_Whey_Protein_bote_2kg_8L_White_Chocolate_front02.png?v=1703411920"
+              alt=""
+            />
+          </a>
+
+          <a href="https://dragonpharmalabs.com/en-mx" target="_blank">
+            <img
+              class="ci"
+              src="https://www.evolutionreal.mx/cdn/shop/files/Proteina-WP100-Cookies.png?v=1742507623&width=1445"
+              alt=""
+            />
+          </a>
+        </div>
+        <div
+          class="flex justify-around items-center swiper-slide"
+          data-aos="fade-right"
+          data-aos-delay="300"
+        >
+          <a href="https://www.muscletech.com/" target="_blank">
+            <img
+              class="ci"
+              src="https://victoryendurance.com/wp-content/uploads/2020/05/fat-burner.png"
+              alt=""
+            />
+          </a>
+
+          <a href="https://www.yaoca.com/" target="_blank">
+            <img
+              class="ci"
+              src="https://ostrovit.com/hpeciai/fc1ca9a3acd0c0e0eaa73c985083a1bc/24454_1.png"
+              alt=""
+            />
+          </a>
+
+          <a href="https://dragonpharmalabs.com/en-mx" target="_blank">
+            <img
+              class="ci"
+              src="https://www.checkers.co.za/medias/10668563EA-checkers515Wx515H?context=bWFzdGVyfGltYWdlc3wxODY0MjZ8aW1hZ2UvcG5nfGltYWdlcy/hbf/h14/9508484612126.png|ad6348c1e284f3c794e9fa0e84e1032e32a0794377bef5cbfd368c4a356ffce9"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+      <div class="h-20">
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
     </div>
-  </div>
-    <div class="container-contact h-[80vh] mx-5 mt-20 flex flex-col gap-20 | lg:flex-row items-center justify-center" data-aos="fade-up" data-aos-duration="1000">
-        <div class="left-container w-full h-[20vh] bg-[url(/img/contact-banner.jpg)] bg-cover bg-center rounded-2xl | lg:w-[30%] lg:h-full" data-aos="fade-right" data-aos-delay="100"></div>
-        <div class="mid-container flex flex-col justify-center items-center gap-10 | lg:w-[30%] lg:h-full" data-aos="zoom-in" data-aos-delay="200">
-            <h6 class="text-center text-[3em] | xl:text-[5em]">
-                <b>SE PARTE DE NUESTRA COMUNIDAD</b>
-            </h6>
-            <p class="text-center text-[1.6em]">
-                Contáctate con nosotros para saber más de bionutrex
-            </p>
-            <div class="btn-contact">
-                <button id="contact" class="px-7 py-2 border rounded-2xl transition hover:bg-[#070065] hover:cursor-pointer hover:text-white">
-                    Contacto
-                </button>
-            </div>
+    <!--Termina swiper-->
+
+    <!--Inicia contacto-->
+    <div
+      class="container-contact h-[80vh] mx-5 mt-20 flex flex-col gap-20 | lg:flex-row items-center justify-center"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div
+        class="left-container w-full h-[20vh] bg-[url(/img/contact-banner.jpg)] bg-cover bg-center rounded-2xl | lg:w-[30%] lg:h-full"
+        data-aos="fade-right"
+        data-aos-delay="100"
+      ></div>
+      <div
+        class="mid-container flex flex-col justify-center items-center gap-10 | lg:w-[30%] lg:h-full"
+        data-aos="zoom-in"
+        data-aos-delay="200"
+      >
+        <h6 class="text-center text-[3em] | xl:text-[5em]">
+          <b>SE PARTE DE NUESTRA COMUNIDAD</b>
+        </h6>
+        <p class="text-center text-[1.6em]">
+          Contáctate con nosotros para saber más de bionutrex
+        </p>
+        <div class="btn-contact">
+          <button
+            id="contact"
+            class="px-7 py-2 border rounded-2xl transition hover:bg-[#070065] hover:cursor-pointer hover:text-white"
+          >
+            <a href="contacto.html">Contacto</a>
+          </button>
         </div>
-        <div class="right-container hidden | lg:flex lg:w-[30%]" data-aos="fade-left" data-aos-delay="300">
-            <img src="img/itloateprotein2.png" alt="" />
-        </div>
+      </div>
+      <div
+        class="right-container hidden | lg:flex lg:w-[30%]"
+        data-aos="fade-left"
+        data-aos-delay="300"
+      >
+        <img src="img/itloateprotein2.png" alt="" />
+      </div>
     </div>
-    <footer class="w-full h-[15vh] mt-10 bg-[#1E1E1E] text-white flex flex-col items-center justify-center gap-5 | lg:h-[3vh] lg:h-[10vh] lg:flex-row lg:justify-around">
-        <div class="title-footer text-center">
-            <h6 class="text-[1.3em] | lg:text-[2em]">
-                BIO<span class="font-bold">NUTREX</span>
-            </h6>
-            <p class="text-[.8em] | lg:text-[1em]">powered by Quantum Code</p>
+    <!--Termina contacto-->
+
+    <!--Inicia footer-->
+    <footer
+      class="w-full h-[10vh] mt-10 bg-[#1E1E1E] text-white flex flex-col items-center justify-center gap-5 | lg:h-[3vh] lg:h-[10vh] lg:flex-row lg:justify-around"
+    >
+      <div class="title-footer text-center">
+        <h6 class="text-[1.3em] | lg:text-[1.5em]">
+          BIO<span class="font-bold">NUTREX</span>
+        </h6>
+        <p class="text-[.8em] | lg:text-[.8em]">powered by Quantum Code</p>
+      </div>
+      <div
+        class="menu-footer text-white hidden | lg:flex lg:gap-10 lg:text-[.8em]"
+      >
+        <li class="list-none px-2 py-1">
+          <a href="index.html">Inicio</a>
+        </li>
+        <li class="list-none px-2 py-1">
+          <a href="weare.html">We Are</a>
+        </li>
+        <li class="list-none px-2 py-1">
+          <a href="productos.html">Suplementos</a>
+        </li>
+      </div>
+      <div class="social-media flex justify-center items-center gap-5">
+        <p class="hidden | lg:flex lg:text-[1em]">¡Síguenos!</p>
+        <div class="div">
+          <a href="#"
+            ><img
+              class="w-[25px] filter invert | lg:w-[25px]"
+              src="img/instagram-svgrepo-com.svg"
+              alt=""
+          /></a>
         </div>
-        <div class="menu-footer text-white hidden | lg:flex lg:gap-10 lg:text-[1.2em]">
-            <li class="list-none px-2 py-1">
-                <a href="#">Inicio</a>
-            </li>
-            <li class="list-none px-2 py-1">
-                <a href="#">We Are</a>
-            </li>
-            <li class="list-none px-2 py-1">
-                <a href="productos.html">Suplementos</a>
-            </li>
+        <div class="div">
+          <a href="#"
+            ><img
+              class="w-[25px] filter invert | lg:w-[25px]"
+              src="img/facebook-svgrepo-com.svg"
+              alt=""
+          /></a>
         </div>
-        <div class="social-media flex justify-center items-center gap-5">
-            <p class="hidden | lg:flex lg:text-[1.3em]">¡Síguenos!</p>
-            <div class="div">
-                <a href="#"><img class="w-[30px] | lg:w-[45px]" src="img/instagram-svgrepo-com.svg" alt="" /></a>
-            </div>
-            <div class="div">
-                <a href="#"><img class="w-[30px] | lg:w-[45px]" src="img/facebook-svgrepo-com.svg" alt="" /></a>
-            </div>
-            <div class="div">
-                <a href="#"><img class="w-[30px] | lg:w-[45px]" src="img/mail-svgrepo-com.svg" alt="" /></a>
-            </div>
+        <div class="div">
+          <a href="#"
+            ><img
+              class="w-[25px] filter invert | lg:w-[25px]"
+              src="img/mail-svgrepo-com.svg"
+              alt=""
+          /></a>
         </div>
+      </div>
     </footer>
+    <!--Termina footer-->
+
     <script src="main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>

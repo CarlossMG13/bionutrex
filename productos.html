@@ -6,55 +6,68 @@
     <title>Productos</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="hmenuStyle.css">
+
   </head>
   <body>
     <div
-      class="nav-container w-[100%] 2xl:text-[1.2em]"
-      data-aos="fade-down"
-      data-aos-duration="1000"
+        class="nav-container w-[100%] | 2xl:text-[1.2em]"
+        data-aos="fade-down"
+        data-aos-duration="1000"
     >
-      <nav
-        class="flex mx-[20px] h-[15vh] justify-between items-center lg:mx-[50px] xl:mx-[70px]"
-      >
-        <div class="menu hidden lg:flex lg:gap-5 2xl:gap-10">
-          <li
-            class="list-none px-2 py-1 transition hover:bg-[#1E1E1E] hover:text-white"
-            data-aos="fade-right"
-            data-aos-delay="100"
-          >
-            <a href="index.html">Inicio</a>
-          </li>
-          <li
-            class="list-none px-2 py-1 transition hover:bg-[#1E1E1E] hover:text-white"
-            data-aos="fade-right"
-            data-aos-delay="200"
-          >
-            <a href="weare.html">We Are</a>
-          </li>
-          <li
-            class="list-none px-2 py-1 transition hover:bg-[#1E1E1E] hover:text-white"
-            data-aos="fade-right"
-            data-aos-delay="300"
-          >
-            <a href="productos.html">Suplementos</a>
-          </li>
-        </div>
-        <div
-          class="title-nav lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2"
-          data-aos="zoom-in"
-          data-aos-duration="1000"
+        <nav
+            class="flex mx-[20px] h-[15vh] justify-between items-center | lg:mx-[50px] | xl:mx-[70px]"
         >
-          <p class="text-[1.2em] lg:text-[2em]">BIO<b>NUTREX</b></p>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu hidden | 2xl:gap-10 | lg:flex lg:gap-5">
+                <li
+                    class="list-none px-2 py-1 transition hover:bg-[#1E1E1E] hover:text-white"
+                    data-aos="fade-right"
+                    data-aos-delay="100"
+                >
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li
+                    class="list-none px-2 py-1 transition hover:bg-[#1E1E1E] hover:text-white"
+                    data-aos="fade-right"
+                    data-aos-delay="200"
+                >
+                    <a href="weare.html">We Are</a>
+                </li>
+                <li
+                    class="list-none px-2 py-1 transition hover:bg-[#1E1E1E] hover:text-white"
+                    data-aos="fade-right"
+                    data-aos-delay="300"
+                >
+                    <a href="productos.html">Suplementos</a>
+                </li>
+            </div>
+            <div
+                class="title-nav | lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+            >
+                <p class="text-[1.2em] | lg:text-[2em]">BIO<b>NUTREX</b></p>
+            </div>
+            <div class="btn-contact">
+                <button
+                    id="contact"
+                    class="px-7 py-2 border rounded-2xl transition hover:bg-[#1E1E1E] hover:cursor-pointer hover:text-white"
+                >
+                    <a href="contacto.html">Contacto</a>
+                </button>
+            </div>
+        </nav>
+        <div class="menu-mobile">
+            <li class="list-none"><a href="index.html">Inicio</a></li>
+            <li class="list-none"><a href="weare.html">We Are</a></li>
+            <li class="list-none"><a href="productos.html">Suplementos</a></li>
+            <li class="list-none"><a href="contacto.html">Contacto</a></li>
         </div>
-        <div class="btn-contact">
-          <button
-            id="contact"
-            class="px-7 py-2 border rounded-2xl transition hover:bg-[#1E1E1E] hover:cursor-pointer hover:text-white"
-          >
-            <a href="contacto.html">Contacto</a>
-          </button>
-        </div>
-      </nav>
     </div>
     <div
       class="bg-[#1E1E1E] h-[30vh] lg:h-[40vh] 2xl:h-[55vh] relative"
@@ -440,5 +453,7 @@
     <script>
       AOS.init();
     </script>
+        <script src="hmenu.js"></script>
+
   </body>
 </html>

@@ -1,230 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BioNutrex Contacto</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="hmenuStyle.css">
+</head>
+<body>
     <div
-      class="nav-container w-[100%] | 2xl:text-[1.2em]"
-      data-aos="fade-down"
-      data-aos-duration="1000"
+        class="nav-container w-[100%] | 2xl:text-[1.2em]"
+        data-aos="fade-down"
+        data-aos-duration="1000"
     >
-      <nav
-        class="flex mx-[20px] h-[15vh] justify-between items-center | lg:mx-[50px] | xl:mx-[70px]"
-      >
-        <div class="menu hidden | 2xl:gap-10 | lg:flex lg:gap-5">
-          <li
-            class="list-none px-2 py-1 transition hover:bg-[#1E1E1E] hover:text-white"
-            data-aos="fade-right"
-            data-aos-delay="100"
-          >
-            <a href="index.html">Inicio</a>
-          </li>
-          <li
-            class="list-none px-2 py-1 transition hover:bg-[#1E1E1E] hover:text-white"
-            data-aos="fade-right"
-            data-aos-delay="200"
-          >
-            <a href="weare.html">We Are</a>
-          </li>
-          <li
-            class="list-none px-2 py-1 transition hover:bg-[#1E1E1E] hover:text-white"
-            data-aos="fade-right"
-            data-aos-delay="300"
-          >
-            <a href="productos.html">Suplementos</a>
-          </li>
-        </div>
-        <div
-          class="title-nav | lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2"
-          data-aos="zoom-in"
-          data-aos-duration="1000"
+        <nav
+            class="flex mx-[20px] h-[15vh] justify-between items-center | lg:mx-[50px] | xl:mx-[70px]"
         >
-          <p class="text-[1.2em] | lg:text-[2em]">BIO<b>NUTREX</b></p>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu hidden | 2xl:gap-10 | lg:flex lg:gap-5">
+                <li
+                    class="list-none px-2 py-1 transition hover:bg-[#1E1E1E] hover:text-white"
+                    data-aos="fade-right"
+                    data-aos-delay="100"
+                >
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li
+                    class="list-none px-2 py-1 transition hover:bg-[#1E1E1E] hover:text-white"
+                    data-aos="fade-right"
+                    data-aos-delay="200"
+                >
+                    <a href="weare.html">We Are</a>
+                </li>
+                <li
+                    class="list-none px-2 py-1 transition hover:bg-[#1E1E1E] hover:text-white"
+                    data-aos="fade-right"
+                    data-aos-delay="300"
+                >
+                    <a href="productos.html">Suplementos</a>
+                </li>
+            </div>
+            <div
+                class="title-nav | lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+            >
+                <p class="text-[1.2em] | lg:text-[2em]">BIO<b>NUTREX</b></p>
+            </div>
+            <div class="btn-contact">
+                <button
+                    id="contact"
+                    class="px-7 py-2 border rounded-2xl transition hover:bg-[#1E1E1E] hover:cursor-pointer hover:text-white"
+                >
+                    <a href="contacto.html">Contacto</a>
+                </button>
+            </div>
+        </nav>
+        <div class="menu-mobile">
+            <li class="list-none"><a href="index.html">Inicio</a></li>
+            <li class="list-none"><a href="weare.html">We Are</a></li>
+            <li class="list-none"><a href="productos.html">Suplementos</a></li>
+            <li class="list-none"><a href="contacto.html">Contacto</a></li>
         </div>
-        <div class="btn-contact">
-          <button
-            id="contact"
-            class="px-7 py-2 border rounded-2xl transition hover:bg-[#1E1E1E] hover:cursor-pointer hover:text-white"
-          >
-            <a href="contacto.html">Contacto</a>
-          </button>
-        </div>
-      </nav>
     </div>
     <div
-      class="flex flex-col items-center justify-center min-h-[90vh] w-full"
-      data-aos="fade-up"
-      data-aos-duration="1000"
+        class="flex flex-col items-center justify-center min-h-[90vh] w-full"
+        data-aos="fade-up"
+        data-aos-duration="1000"
     >
-      <div
-        class="flex flex-col md:flex-row items-center justify-between bg-[#1E1E1E] w-full max-w-[130vh] px-6 md:px-10 py-8 md:py-10 rounded-3xl gap-8 md:gap-10"
-      >
         <div
-          class="w-full md:w-[60vh] h-[40vh] md:h-[84vh]"
-          data-aos="fade-right"
-          data-aos-delay="100"
+            class="flex flex-col md:flex-row items-center justify-between bg-[#1E1E1E] w-full max-w-[130vh] px-6 md:px-10 py-8 md:py-10 rounded-3xl gap-8 md:gap-10"
         >
-          <img
-            class="w-full h-full rounded-3xl object-cover"
-            src="img/rBionutrex.jpg"
-            alt=""
-          />
-        </div>
-        <div
-          class="w-full md:w-[60vh] h-auto md:h-[84vh] flex flex-col items-center justify-center text-white"
-          data-aos="fade-left"
-          data-aos-delay="200"
-        >
-          <h2
-            class="text-4xl md:text-5xl font-semibold mb-4"
-            data-aos="zoom-in"
-            data-aos-delay="300"
-          >
-            Contáctanos
-          </h2>
-          <p
-            class="text-base md:text-lg text-justify mb-5"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
-            ¿Te interesó alguno de nuestros productos y quieres saber más?
-            Nuestro equipo está disponible 24/7 para apoyarte. Chatea con
-            nosotros y obtén tus productos
-            <b>BIO<span class="font-bold">NUTREX</span></b
-            >.
-          </p>
-          <form action="#" class="w-full">
             <div
-              class="flex flex-col md:flex-row items-start md:items-center justify-center w-full gap-4"
+                class="w-full md:w-[60vh] h-[40vh] md:h-[84vh]"
+                data-aos="fade-right"
+                data-aos-delay="100"
             >
-              <div
-                class="w-full md:w-1/2"
-                data-aos="fade-up"
-                data-aos-delay="500"
-              >
-                <label for="nombre" class="block mb-1">Nombre</label>
-                <input
-                  type="text"
-                  id="nombre"
-                  class="rounded-md p-2 mb-4 w-full bg-white text-black h-[40px]"
-                  placeholder="nombre"
-                  required
+                <img
+                    class="w-full h-full rounded-3xl object-cover"
+                    src="img/rBionutrex.jpg"
+                    alt=""
                 />
-              </div>
-              <div
-                class="w-full md:w-1/2"
-                data-aos="fade-up"
-                data-aos-delay="600"
-              >
-                <label for="apellido" class="block mb-1">Apellido</label>
-                <input
-                  type="text"
-                  id="apellido"
-                  class="rounded-md p-2 mb-4 w-full bg-white text-black h-[40px]"
-                  placeholder="apellido"
-                  required
-                />
-              </div>
             </div>
-            <label
-              for="mail"
-              class="block mb-1"
-              data-aos="fade-up"
-              data-aos-delay="700"
-              >Correo electrónico</label
+            <div
+                class="w-full md:w-[60vh] h-auto md:h-[84vh] flex flex-col items-center justify-center text-white"
+                data-aos="fade-left"
+                data-aos-delay="200"
             >
-            <input
-              type="email"
-              id="mail"
-              class="rounded-md p-2 mb-4 w-full bg-white text-black h-[40px]"
-              placeholder="correo electrónico"
-              required
-            />
-
-            <label
-              for="celular"
-              class="block mb-1"
-              data-aos="fade-up"
-              data-aos-delay="800"
-              >Número telefónico</label
-            >
-            <input
-              type="tel"
-              id="celular"
-              class="rounded-md p-2 mb-4 w-full bg-white text-black h-[40px]"
-              placeholder="número telefónico"
-              required
-            />
-
-            <button
-              type="button"
-              class="bg-[#0D00BD] cursor-pointer h-[40px] w-full md:w-[305px] text-center mt-6 hover:bg-[#0A0095] transition rounded-2xl"
-            >
-              <a href="#" class="block w-full">Enviar Mensaje</a>
-            </button>
-          </form>
+                <h2
+                    class="text-4xl md:text-5xl font-semibold mb-4"
+                    data-aos="zoom-in"
+                    data-aos-delay="300"
+                >
+                    Contáctanos
+                </h2>
+                <p
+                    class="text-base md:text-lg text-justify mb-5"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                >
+                    ¿Te interesó alguno de nuestros productos y quieres saber más?
+                    Nuestro equipo está disponible 24/7 para apoyarte. Chatea con
+                    nosotros y obtén tus productos
+                    <b>BIO<span class="font-bold">NUTREX</span></b
+                    >.
+                </p>
+                <form action="#" class="w-full">
+                  <div
+                      class="flex flex-col md:flex-row items-start md:items-center justify-center w-full gap-4"
+                  >
+                      <div
+                          class="w-full md:w-1/2"
+                          data-aos="fade-up"
+                          data-aos-delay="500"
+                      >
+                          <label for="nombre" class="block mb-1">Nombre</label>
+                          <input
+                              type="text"
+                              id="nombre"
+                              class="rounded-md p-2 mb-4 w-full bg-white text-black h-[40px]"
+                              placeholder="nombre"
+                              required
+                          />
+                      </div>
+                      <div
+                          class="w-full md:w-1/2"
+                          data-aos="fade-up"
+                          data-aos-delay="600"
+                      >
+                          <label for="apellido" class="block mb-1">Apellido</label>
+                          <input
+                              type="text"
+                              id="apellido"
+                              class="rounded-md p-2 mb-4 w-full bg-white text-black h-[40px]"
+                              placeholder="apellido"
+                              required
+                          />
+                      </div>
+                  </div>
+                  <label
+                      for="mail"
+                      class="block mb-1"
+                      data-aos="fade-up"
+                      data-aos-delay="700"
+                      >Correo electrónico</label
+                  >
+                  <input
+                      type="email"
+                      id="mail"
+                      class="rounded-md p-2 mb-4 w-full bg-white text-black h-[40px]"
+                      placeholder="correo electrónico"
+                      required
+                  />
+              
+                  <label
+                      for="celular"
+                      class="block mb-1"
+                      data-aos="fade-up"
+                      data-aos-delay="800"
+                      >Número telefónico</label
+                  >
+                  <input
+                      type="tel"
+                      id="celular"
+                      class="rounded-md p-2 mb-4 w-full bg-white text-black h-[40px]"
+                      placeholder="número telefónico"
+                      required
+                  />
+              
+                  <button
+                      type="button"
+                      id="enviarWhatsApp"
+                      class="bg-[#0D00BD] cursor-pointer h-[40px] w-full md:w-[305px] text-center mt-6 hover:bg-[#0A0095] transition rounded-2xl"
+                  >
+                      <a href="#" class="block w-full text-white">Enviar Mensaje</a>
+                  </button>
+              </form>
+            </div>
         </div>
-      </div>
     </div>
 
     <footer
-      class="w-full h-[10vh] mt-10 bg-[#1E1E1E] text-white flex flex-col items-center justify-center gap-5 | lg:h-[3vh] lg:h-[10vh] lg:flex-row lg:justify-around"
+        class="w-full h-[10vh] mt-10 bg-[#1E1E1E] text-white flex flex-col items-center justify-center gap-5 | lg:h-[3vh] lg:h-[10vh] lg:flex-row lg:justify-around"
     >
-      <div class="title-footer text-center">
-        <h6 class="text-[1.3em] | lg:text-[1.5em]">
-          BIO<span class="font-bold">NUTREX</span>
-        </h6>
-        <p class="text-[.8em] | lg:text-[.8em]">powered by Quantum Code</p>
-      </div>
-      <div
-        class="menu-footer text-white hidden | lg:flex lg:gap-10 lg:text-[.8em]"
-      >
-        <li class="list-none px-2 py-1">
-          <a href="index.html">Inicio</a>
-        </li>
-        <li class="list-none px-2 py-1">
-          <a href="weare.html">We Are</a>
-        </li>
-        <li class="list-none px-2 py-1">
-          <a href="productos.html">Suplementos</a>
-        </li>
-      </div>
-      <div class="social-media flex justify-center items-center gap-5">
-        <p class="hidden | lg:flex lg:text-[1em]">¡Síguenos!</p>
-        <div class="div">
-          <a href="#"
-            ><img
-              class="w-[25px] filter invert | lg:w-[25px]"
-              src="img/instagram-svgrepo-com.svg"
-              alt=""
-          /></a>
+        <div class="title-footer text-center">
+            <h6 class="text-[1.3em] | lg:text-[1.5em]">
+                BIO<span class="font-bold">NUTREX</span>
+            </h6>
+            <p class="text-[.8em] | lg:text-[.8em]">powered by Quantum Code</p>
         </div>
-        <div class="div">
-          <a href="#"
-            ><img
-              class="w-[25px] filter invert | lg:w-[25px]"
-              src="img/facebook-svgrepo-com.svg"
-              alt=""
-          /></a>
+        <div
+            class="menu-footer text-white hidden | lg:flex lg:gap-10 lg:text-[.8em]"
+        >
+            <li class="list-none px-2 py-1">
+                <a href="index.html">Inicio</a>
+            </li>
+            <li class="list-none px-2 py-1">
+                <a href="weare.html">We Are</a>
+            </li>
+            <li class="list-none px-2 py-1">
+                <a href="productos.html">Suplementos</a>
+            </li>
         </div>
-        <div class="div">
-          <a href="#"
-            ><img
-              class="w-[25px] filter invert | lg:w-[25px]"
-              src="img/mail-svgrepo-com.svg"
-              alt=""
-          /></a>
+        <div class="social-media flex justify-center items-center gap-5">
+            <p class="hidden | lg:flex lg:text-[1em]">¡Síguenos!</p>
+            <div class="div">
+                <a href="#"
+                    ><img
+                        class="w-[25px] filter invert | lg:w-[25px]"
+                        src="img/instagram-svgrepo-com.svg"
+                        alt=""
+                /></a>
+            </div>
+            <div class="div">
+                <a href="#"
+                    ><img
+                        class="w-[25px] filter invert | lg:w-[25px]"
+                        src="img/facebook-svgrepo-com.svg"
+                        alt=""
+                /></a>
+            </div>
+            <div class="div">
+                <a href="#"
+                    ><img
+                        class="w-[25px] filter invert | lg:w-[25px]"
+                        src="img/mail-svgrepo-com.svg"
+                        alt=""
+                /></a>
+            </div>
         </div>
-      </div>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init();
+        AOS.init();
     </script>
-  </body>
+    <script src="hmenu.js"></script>
+    <script src="form.js"></script>
+</body>
 </html>

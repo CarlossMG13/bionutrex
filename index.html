@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="hmenuStyle.css">
     <style>
       .ci {
         width: 200px; /* Adjust as needed */
@@ -26,53 +27,64 @@
   <body class="text-[#1E1E1E] font-arial">
     <!--Inicia Nav-->
     <div
-      class="nav-container w-[100%] | 2xl:text-[1.2em]"
-      data-aos="fade-down"
-      data-aos-duration="1000"
-    >
-      <nav
+    class="nav-container w-[100%] | 2xl:text-[1.2em]"
+    data-aos="fade-down"
+    data-aos-duration="1000"
+>
+    <nav
         class="flex mx-[20px] h-[15vh] justify-between items-center | lg:mx-[50px] | xl:mx-[70px]"
-      >
+    >
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <div class="menu hidden | 2xl:gap-10 | lg:flex lg:gap-5">
-          <li
-            class="list-none px-2 py-1 transition hover:bg-[#1E1E1E] hover:text-white"
-            data-aos="fade-right"
-            data-aos-delay="100"
-          >
-            <a href="index.html">Inicio</a>
-          </li>
-          <li
-            class="list-none px-2 py-1 transition hover:bg-[#1E1E1E] hover:text-white"
-            data-aos="fade-right"
-            data-aos-delay="200"
-          >
-            <a href="weare.html">We Are</a>
-          </li>
-          <li
-            class="list-none px-2 py-1 transition hover:bg-[#1E1E1E] hover:text-white"
-            data-aos="fade-right"
-            data-aos-delay="300"
-          >
-            <a href="productos.html">Suplementos</a>
-          </li>
+            <li
+                class="list-none px-2 py-1 transition hover:bg-[#1E1E1E] hover:text-white"
+                data-aos="fade-right"
+                data-aos-delay="100"
+            >
+                <a href="index.html">Inicio</a>
+            </li>
+            <li
+                class="list-none px-2 py-1 transition hover:bg-[#1E1E1E] hover:text-white"
+                data-aos="fade-right"
+                data-aos-delay="200"
+            >
+                <a href="weare.html">We Are</a>
+            </li>
+            <li
+                class="list-none px-2 py-1 transition hover:bg-[#1E1E1E] hover:text-white"
+                data-aos="fade-right"
+                data-aos-delay="300"
+            >
+                <a href="productos.html">Suplementos</a>
+            </li>
         </div>
         <div
-          class="title-nav | lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2"
-          data-aos="zoom-in"
-          data-aos-duration="1000"
+            class="title-nav | lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
         >
-          <p class="text-[1.2em] | lg:text-[2em]">BIO<b>NUTREX</b></p>
+            <p class="text-[1.2em] | lg:text-[2em]">BIO<b>NUTREX</b></p>
         </div>
-        <div class="btn-contact" data-aos="fade-left" data-aos-delay="200">
-          <button
-            id="contact"
-            class="px-7 py-2 border rounded-2xl transition hover:bg-[#1E1E1E] hover:cursor-pointer hover:text-white"
-          >
-            <a href="contacto.html">Contacto</a>
-          </button>
+        <div class="btn-contact">
+            <button
+                id="contact"
+                class="px-7 py-2 border rounded-2xl transition hover:bg-[#1E1E1E] hover:cursor-pointer hover:text-white"
+            >
+                <a href="contacto.html">Contacto</a>
+            </button>
         </div>
-      </nav>
+    </nav>
+    <div class="menu-mobile">
+        <li class="list-none"><a href="index.html">Inicio</a></li>
+        <li class="list-none"><a href="weare.html">We Are</a></li>
+        <li class="list-none"><a href="productos.html">Suplementos</a></li>
+        <li class="list-none"><a href="contacto.html">Contacto</a></li>
     </div>
+</div>
     <!--Termina nav-->
 
     <!--Inicia banner-->
@@ -146,7 +158,7 @@
       data-aos-duration="1000"
     >
       <div
-        class="top-content-offer flex flex-col text-start justify-center items-center | lg:justify-start lg:items-start"
+        class="top-content-offer flex flex-col text-start justify-center items-center | lg:justify-start lg:items-start z-0"
       >
         <h4
           class="text-black text-[3em] text-center | lg:text-white lg:text-start lg:mt-5 lg:px-[30px]"
@@ -415,6 +427,7 @@
     <!--Termina footer-->
 
     <script src="main.js"></script>
+    <script src="hmenu.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

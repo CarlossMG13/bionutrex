@@ -65,6 +65,8 @@
             font-weight: bold;
         }
     </style>
+        <link rel="stylesheet" href="hmenuStyle.css">
+
 </head>
 <body>
     <div
@@ -75,6 +77,11 @@
         <nav
             class="flex mx-5 h-[15vh] justify-between items-center lg:mx-12 xl:mx-16"
         >
+            <div class="hamburger">
+                <span ></span>
+                <span></span>
+                <span></span>
+            </div>
             <div class="menu hidden text-white lg:flex lg:gap-5 2xl:gap-10">
                 <li
                     class="list-none px-2 py-1 transition hover:bg-white hover:text-black"
@@ -116,6 +123,13 @@
                 </button>
             </div>
         </nav>
+        <div class="menu-mobile">
+            <li class="list-none"><a href="index.html">Inicio</a></li>
+            <li class="list-none"><a href="weare.html">We Are</a></li>
+            <li class="list-none"><a href="productos.html">Suplementos</a></li>
+            <li class="list-none"><a href="contacto.html">Contacto</a></li>
+        </div>
+    </div>
     </div>
     <div
         class="hitos flex flex-col items-center justify-center bg-[#1E1E1E] text-white w-full"
@@ -343,6 +357,8 @@
   
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="hmenu.js"></script>
+
  <script>
       // Inicializar AOS
       AOS.init();

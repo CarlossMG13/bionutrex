@@ -1,258 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>We Are</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  </head>
-  <body>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <style>
+              /* Aplicar estilos a partir de 682px */
+              @media (min-width: 682px) {
+            .swiper-custom-breakpoint {
+                height: 65vh !important; /* Nueva altura - !important puede ser necesario para sobreescribir Tailwind */
+            }
+            .swiper-custom-breakpoint .swiper-button-prev,
+            .swiper-custom-breakpoint .swiper-button-next {
+                display: none !important; /* Ocultar flechas */
+            }
+        }
+
+        /* Opcional: Ajustar alturas para breakpoints mayores si es necesario */
+         @media (min-width: 768px) { /* md */
+            .swiper-custom-breakpoint {
+                height: 70vh !important; /* Altura para md */
+            }
+        }
+        @media (min-width: 1280px) { /* xl */
+            .swiper-custom-breakpoint {
+                height: 75vh !important; /* Altura para xl */
+            }
+        }
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: #333 !important; /* Color oscuro para los botones */
+            background-color: #eee; /* Fondo claro para los botones */
+            border-radius: 50%; /* Forma circular */
+            width: 30px; /* Ancho pequeño */
+            height: 30px; /* Alto pequeño */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px; /* Tamaño del icono */
+            top: auto; /* Anula la posición vertical por defecto */
+            bottom: 20px; /* Posición en la parte inferior */
+            z-index: 10; /* Asegura que estén por encima del contenido */
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sutil sombra */
+        }
+
+        .swiper-button-prev {
+            left: 45% !important; /* Posición a la izquierda del centro */
+        }
+
+        .swiper-button-next {
+            right: 45% !important; /* Posición a la derecha del centro */
+        }
+
+        .swiper-button-prev::after,
+        .swiper-button-next::after {
+            font-size: 16px !important; /* Tamaño del icono */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
     <div
-      class="nav-container w-[100%] | 2xl:text-[1.2em] bg-[#1E1E1E]"
-      data-aos="fade-down"
-      data-aos-duration="1000"
-    >
-      <nav
-        class="flex mx-[20px] h-[15vh] justify-between items-center | lg:mx-[50px] | xl:mx-[70px]"
-      >
-        <div class="menu hidden text-white | 2xl:gap-10 | lg:flex lg:gap-5">
-          <li
-            class="list-none px-2 py-1 transition hover:bg-white hover:text-black"
-            data-aos="fade-right"
-            data-aos-delay="100"
-          >
-            <a href="index.html">Inicio</a>
-          </li>
-          <li
-            class="list-none px-2 py-1 transition hover:bg-white hover:text-black"
-            data-aos="fade-right"
-            data-aos-delay="100"
-          >
-            <a href="weare.html">We Are</a>
-          </li>
-          <li
-            class="list-none px-2 py-1 transition hover:bg-white hover:text-black"
-            data-aos="fade-right"
-            data-aos-delay="100"
-          >
-            <a href="productos.html">Suplementos</a>
-          </li>
-        </div>
-        <div
-          class="title-nav | lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2"
-          data-aos="zoom-in"
-          data-aos-duration="1000"
-        >
-          <p class="text-white text-[1.2em] | lg:text-[2em]">
-            BIO<b>NUTREX</b>
-          </p>
-        </div>
-        <div class="btn-contact" data-aos="fade-left" data-aos-delay="200">
-          <button
-            id="contact"
-            class="px-7 py-2 border rounded-2xl transition bg-white hover:bg-[#1E1E1E] hover:cursor-pointer hover:text-white"
-          >
-            <a href="contacto.html">Contacto</a>
-          </button>
-        </div>
-      </nav>
-    </div>
-    <div
-      class="hitos flex flex-col items-center justify-center bg-[#1E1E1E] text-white w-full"
-      data-aos="fade-up"
-      data-aos-duration="1000"
-    >
-      <div class="title-hitos">
-        <h6 class="text-[4em] | md:text-[7em] | xl:text-[9em]">
-          <b>BIONUTREX</b>
-        </h6>
-      </div>
-      <div class="hitos-descrip mt-5 flex text-center gap-10">
-        <div class="left" data-aos="fade-right" data-aos-duration="1000">
-          <p class="text-[2em] | md:text-[2.5em] | 2xl:text-[3.5em]">+1K</p>
-          <p class="text-[1.5em] | 2xl:text-[2em]">
-            <i>Clientes satisfechos</i>
-          </p>
-        </div>
-        <div class="mid" data-aos="fade-up" data-aos-duration="1000">
-          <p class="text-[2em] | md:text-[2.5em] | 2xl:text-[3.5em]">+10-K</p>
-          <p class="text-[1.5em] | 2xl:text-[2em]">
-            <i>Productos distribuidos</i>
-          </p>
-        </div>
-        <div class="right" data-aos="fade-left" data-aos-duration="1000">
-          <p class="text-[2em] | md:text-[2.5em] | 2xl:text-[3.5em]">+5</p>
-          <p class="text-[1.5em] | 2xl:text-[2em]">
-            <i>Años de experiencia</i>
-          </p>
-        </div>
-      </div>
-      <div
-        class="img-hitos flex justify-center"
-        data-aos="zoom-in"
+        class="nav-container w-full text-xl bg-[#1E1E1E] 2xl:text-2xl"
+        data-aos="fade-down"
         data-aos-duration="1000"
-      >
-        <img
-          class="m-10 w-[50%] | lg:w-[50%] | 2xl:w-[65%]"
-          src="img/cookieitholatesinmarcos.png"
-          alt=""
-        />
-      </div>
+    >
+        <nav
+            class="flex mx-5 h-[15vh] justify-between items-center lg:mx-12 xl:mx-16"
+        >
+            <div class="menu hidden text-white lg:flex lg:gap-5 2xl:gap-10">
+                <li
+                    class="list-none px-2 py-1 transition hover:bg-white hover:text-black"
+                    data-aos="fade-right"
+                    data-aos-delay="100"
+                >
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li
+                    class="list-none px-2 py-1 transition hover:bg-white hover:text-black"
+                    data-aos="fade-right"
+                    data-aos-delay="100"
+                >
+                    <a href="weare.html">We Are</a>
+                </li>
+                <li
+                    class="list-none px-2 py-1 transition hover:bg-white hover:text-black"
+                    data-aos="fade-right"
+                    data-aos-delay="100"
+                >
+                    <a href="productos.html">Suplementos</a>
+                </li>
+            </div>
+            <div
+                class="title-nav lg:absolute lg:left-1/2 lg:-translate-x-1/2"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+            >
+                <p class="text-white text-xl lg:text-4xl">
+                    BIO<b>NUTREX</b>
+                </p>
+            </div>
+            <div class="btn-contact" data-aos="fade-left" data-aos-delay="200">
+                <button
+                    id="contact"
+                    class="px-7 py-2 border rounded-2xl transition bg-white hover:bg-[#1E1E1E] hover:cursor-pointer hover:text-white"
+                >
+                    <a href="contacto.html">Contacto</a>
+                </button>
+            </div>
+        </nav>
     </div>
     <div
-      class="w-full mt-10 h-[50vh] p-[10px]"
-      data-aos="fade-in"
-      data-aos-duration="1000"
+        class="hitos flex flex-col items-center justify-center bg-[#1E1E1E] text-white w-full"
+        data-aos="fade-up"
+        data-aos-duration="1000"
     >
-      <div
-        class="w-full h-full bg-[url('img/banner-running.jpg')] bg-cover bg-center relative overflow-hidden rounded-2xl before:content-[''] before:absolute before:inset-0 before:bg-black before:opacity-50"
-      >
-        <div
-          class="absolute inset-0 flex flex-col items-start justify-center text-white z-10"
-        >
-          <h1 class="text-[2.5em] font-bold px-10 | xl:text-[3.5em]">
-            EL MEJOR ALIADO SIEMPRE A TU ALCANCE
-          </h1>
-          <p class="text-[1.3em] px-10 | xl:text-[1.6em]">
-            En BIONUTREX, ofrecemos suplementos de calidad premium, respaldo
-            científico y atención personalizada. Supera tus límites con el
-            aliado que realmente entiende tus metas.
-          </p>
+        <div class="title-hitos">
+            <h6 class="text-7xl md:text-9xl xl:text-[14rem]">
+                <b>BIONUTREX</b>
+            </h6>
         </div>
-      </div>
+        <div class="hitos-descrip mt-5 flex text-center gap-10">
+            <div class="left" data-aos="fade-right" data-aos-duration="1000">
+                <p class="text-3xl md:text-4xl 2xl:text-5xl">+1K</p>
+                <p class="text-xl 2xl:text-2xl">
+                    <i>Clientes satisfechos</i>
+                </p>
+            </div>
+            <div class="mid" data-aos="fade-up" data-aos-duration="1000">
+                <p class="text-3xl md:text-4xl 2xl:text-5xl">+10-K</p>
+                <p class="text-xl 2xl:text-2xl">
+                    <i>Productos distribuidos</i>
+                </p>
+            </div>
+            <div class="right" data-aos="fade-left" data-aos-duration="1000">
+                <p class="text-3xl md:text-4xl 2xl:text-5xl">+5</p>
+                <p class="text-xl 2xl:text-2xl">
+                    <i>Años de experiencia</i>
+                </p>
+            </div>
+        </div>
+        <div
+            class="img-hitos flex justify-center"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+        >
+            <img
+                class="m-10 w-1/2 lg:w-1/2 2xl:w-2/3"
+                src="img/cookieitholatesinmarcos.png"
+                alt=""
+            />
+        </div>
     </div>
     <div
-      class="w-full mt-10 px-[10px] pb-10"
-      data-aos="fade-up"
-      data-aos-duration="1000"
+        class="w-full mt-10 h-[50vh] p-2.5"
+        data-aos="fade-in"
+        data-aos-duration="1000"
     >
-      <h2 class="text-center text-[3em]">
-        INSPIRADOS PARA INSPIRAR TU MEJOR VERSIÓN.
-      </h2>
-      <p class="text-center mb-10">
-        Compromiso, innovación y calidad para impulsar tu mejor versión.
-      </p>
-      <div
-        class="w-full h-[50vh] bg-[url('img/inspire-img.jpg')] bg-cover bg-center relative overflow-hidden rounded-2xl before:content-[''] before:absolute before:inset-0 before:bg-black before:opacity-50"
-      >
         <div
-          class="absolute inset-0 flex flex-col items-start justify-center text-white z-10"
+            class="w-full h-full bg-[url('img/banner-running.jpg')] bg-cover bg-center relative overflow-hidden rounded-2xl before:content-[''] before:absolute before:inset-0 before:bg-black before:opacity-50"
         >
-          <div class="flex flex-col p-10 | lg:flex-row">
-            <div class="left w-[300px] | lg:w-[320px]">
-              <div
-                class="flex items-center gap-3 p-2 | lg:p-5"
-                data-aos="fade-right"
-                data-aos-duration="1000"
-              >
-                <img class="w-8 h-8 filter invert" src="img/svg1.svg" alt="" />
-                <span class="lg:text-[1.3em]">Ingredientes premium</span>
-              </div>
-              <div
-                class="flex items-center gap-3 p-2 | lg:p-5"
-                data-aos="fade-right"
-                data-aos-delay="200"
-                data-aos-duration="1000"
-              >
-                <img class="w-8 h-8 filter invert" src="img/svg2.svg" alt="" />
-                <span class="lg:text-[1.3em]">Ciencia y tecnología</span>
-              </div>
-              <div
-                class="flex items-center gap-3 p-2 | lg:p-5"
-                data-aos="fade-right"
-                data-aos-delay="400"
-                data-aos-duration="1000"
-              >
-                <img class="w-8 h-8 filter invert" src="img/svg3.svg" alt="" />
-                <span class="lg:text-[1.3em]">Resultados comprobados</span>
-              </div>
+            <div
+                class="absolute inset-0 flex flex-col items-start justify-center text-white z-10"
+            >
+                <h1 class="text-3xl font-bold px-10 xl:text-5xl">
+                    EL MEJOR ALIADO SIEMPRE A TU ALCANCE
+                </h1>
+                <p class="text-lg px-10 xl:text-xl">
+                    En BIONUTREX, ofrecemos suplementos de calidad premium, respaldo
+                    científico y atención personalizada. Supera tus límites con el
+                    aliado que realmente entiende tus metas.
+                </p>
             </div>
-            <div class="right w-[300px] | lg:w-[330px]">
-              <div
-                class="flex items-center gap-3 p-2 | lg:p-5"
-                data-aos="fade-left"
-                data-aos-duration="1000"
-              >
-                <img class="w-8 h-8 filter invert" src="img/svg4.svg" alt="" />
-                <span class="lg:text-[1.3em]">Compromiso con tu salud</span>
-              </div>
-              <div
-                class="flex items-center gap-4 p-2 | lg:p-5"
-                data-aos="fade-left"
-                data-aos-delay="200"
-                data-aos-duration="1000"
-              >
-                <img class="w-7 h-7 filter invert" src="img/svg5.svg" alt="" />
-                <span class="lg:text-[1.3em]">Variedad para cada meta</span>
-              </div>
-              <div
-                class="flex items-center gap-3 p-2 | lg:p-5"
-                data-aos="fade-left"
-                data-aos-delay="400"
-                data-aos-duration="1000"
-              >
-                <img class="w-8 h-8 filter invert" src="img/svg6.svg" alt="" />
-                <span class="lg:text-[1.3em]">Pasión por el deporte</span>
-              </div>
+        </div>
+    </div>
+    <div
+        class="w-full mt-10 px-2.5 pb-10"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+    >
+        <h2 class="text-center text-4xl">
+            INSPIRADOS PARA INSPIRAR TU MEJOR VERSIÓN.
+        </h2>
+        <p class="text-center mb-10">
+            Compromiso, innovación y calidad para impulsar tu mejor versión.
+        </p>
+        <div
+            class="w-full h-[50vh] bg-[url('img/inspire-img.jpg')] bg-cover bg-center relative overflow-hidden rounded-2xl before:content-[''] before:absolute before:inset-0 before:bg-black before:opacity-50"
+        >
+            <div
+                class="absolute inset-0 flex flex-col items-start justify-center text-white z-10"
+            >
+                <div class="flex flex-col p-10 lg:flex-row">
+                    <div class="left w-[300px] lg:w-[320px]">
+                        <div
+                            class="flex items-center gap-3 p-2 lg:p-5"
+                            data-aos="fade-right"
+                            data-aos-duration="1000"
+                        >
+                            <img class="w-8 h-8 filter invert" src="img/svg1.svg" alt="" />
+                            <span class="lg:text-lg">Ingredientes premium</span>
+                        </div>
+                        <div
+                            class="flex items-center gap-3 p-2 lg:p-5"
+                            data-aos="fade-right"
+                            data-aos-delay="200"
+                            data-aos-duration="1000"
+                        >
+                            <img class="w-8 h-8 filter invert" src="img/svg2.svg" alt="" />
+                            <span class="lg:text-lg">Ciencia y tecnología</span>
+                        </div>
+                        <div
+                            class="flex items-center gap-3 p-2 lg:p-5"
+                            data-aos="fade-right"
+                            data-aos-delay="400"
+                            data-aos-duration="1000"
+                        >
+                            <img class="w-8 h-8 filter invert" src="img/svg3.svg" alt="" />
+                            <span class="lg:text-lg">Resultados comprobados</span>
+                        </div>
+                    </div>
+                    <div class="right w-[300px] lg:w-[330px]">
+                        <div
+                            class="flex items-center gap-3 p-2 lg:p-5"
+                            data-aos="fade-left"
+                            data-aos-duration="1000"
+                        >
+                            <img class="w-8 h-8 filter invert" src="img/svg4.svg" alt="" />
+                            <span class="lg:text-lg">Compromiso con tu salud</span>
+                        </div>
+                        <div
+                            class="flex items-center gap-4 p-2 lg:p-5"
+                            data-aos="fade-left"
+                            data-aos-delay="200"
+                            data-aos-duration="1000"
+                        >
+                            <img class="w-7 h-7 filter invert" src="img/svg5.svg" alt="" />
+                            <span class="lg:text-lg">Variedad para cada meta</span>
+                        </div>
+                        <div
+                            class="flex items-center gap-3 p-2 lg:p-5"
+                            data-aos="fade-left"
+                            data-aos-delay="400"
+                            data-aos-duration="1000"
+                        >
+                            <img class="w-8 h-8 filter invert" src="img/svg6.svg" alt="" />
+                            <span class="lg:text-lg">Pasión por el deporte</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+    </div>
+    <div class="swiper mb-20 h-[50vh] md:h-[60vh] xl:h-[70vh] m-3 md:m-5 bg-[#1E1E1E] rounded-xl md:rounded-2xl xl:rounded-3xl flex justify-center items-center relative w-full md:w-[90vw] mx-auto">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <div class="flex flex-col md:flex-row justify-around items-center h-full w-full gap-3 md:gap-5 xl:gap-10 p-3 md:p-5 xl:p-10">
+                  <div class="h-[30vh] w-full md:w-[45%] flex justify-center items-center order-1 md:order-1"> <video class="w-full h-full object-contain rounded-md" autoplay loop muted playsinline src="img/videos/materiaPrima.mp4"></video> </div>
+                  <div class="bg-[#2F2F2F] w-full md:w-[45%] rounded-md xl:rounded-[30px] flex flex-col justify-center items-center gap-3 md:gap-5 xl:gap-10 p-3 md:p-5 xl:p-10 order-2 md:order-2">
+                      <h1 class="text-white text-xl md:text-2xl xl:text-3xl font-semibold text-center">Selección y Control de Materias Primas</h1>
+                      <p class="text-white text-sm md:text-base xl:text-lg font-light text-justify">Trabajamos con proveedores certificados y realizamos rigurosos controles de calidad para asegurar la pureza y potencia de cada ingrediente.</p>
+                  </div>
+              </div>
           </div>
-        </div>
+          <div class="swiper-slide">
+              <div class="flex flex-col md:flex-row justify-around items-center h-full w-full gap-3 md:gap-5 xl:gap-10 p-3 md:p-5 xl:p-10">
+                  <div class="h-[30vh] w-full md:w-[45%] flex justify-center items-center order-1 md:order-1">
+                      <video class="w-full h-full object-contain rounded-md" autoplay loop muted playsinline src="img/videos/formulacion.mp4"></video>
+                  </div>
+                  <div class="bg-[#2F2F2F] w-full md:w-[45%] rounded-md xl:rounded-[30px] flex flex-col justify-center items-center gap-3 md:gap-5 xl:gap-10 p-3 md:p-5 xl:p-10 order-2 md:order-2">
+                      <h1 class="text-white text-xl md:text-2xl xl:text-3xl font-semibold text-center">Formulación y Mezcla Precisa</h1>
+                      <p class="text-white text-sm md:text-base xl:text-lg font-light text-justify">Nuestros suplementos son formulados por expertos en nutrición deportiva, quienes diseñan mezclas precisas para maximizar la eficacia de cada producto.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="swiper-slide">
+              <div class="flex flex-col md:flex-row justify-around items-center h-full w-full gap-3 md:gap-5 xl:gap-10 p-3 md:p-5 xl:p-10">
+                  <div class="h-[30vh] w-full md:w-[45%] flex justify-center items-center order-1 md:order-1">
+                      <video class="w-full h-full object-contain rounded-md" autoplay loop muted playsinline src="img/videos/calidad.mp4"></video>
+                  </div>
+                  <div class="bg-[#2F2F2F] w-full md:w-[45%] rounded-md xl:rounded-[30px] flex flex-col justify-center items-center gap-3 md:gap-5 xl:gap-10 p-3 md:p-5 xl:p-10 order-2 md:order-2">
+                      <h1 class="text-white text-xl md:text-2xl xl:text-3xl font-semibold text-center">Control de Calidad y Pruebas Rigurosas</h1>
+                      <p class="text-white text-sm md:text-base xl:text-lg font-light text-justify">La calidad es nuestra prioridad. Cada lote de suplementos es sometido a pruebas exhaustivas en nuestros laboratorios para verificar su pureza, potencia y seguridad. </p>
+                  </div>
+              </div>
+          </div>
+          <div class="swiper-slide">
+              <div class="flex flex-col md:flex-row justify-around items-center h-full w-full gap-3 md:gap-5 xl:gap-10 p-3 md:p-5 xl:p-10">
+                  <div class="h-[30vh] w-full md:w-[45%] flex justify-center items-center order-1 md:order-1">
+                      <video class="w-full h-full object-contain rounded-md" autoplay loop muted playsinline src="img/videos/envasado.mp4"></video>
+                  </div>
+                  <div class="bg-[#2F2F2F] w-full md:w-[45%] rounded-md xl:rounded-[30px] flex flex-col justify-center items-center gap-3 md:gap-5 xl:gap-10 p-3 md:p-5 xl:p-10 order-2 md:order-2">
+                      <h1 class="text-white text-xl md:text-2xl xl:text-3xl font-semibold text-center">Envasado y Distribución Segura</h1>
+                      <p class="text-white text-sm md:text-base xl:text-lg font-light text-justify">Para preservar la calidad de nuestros suplementos, utilizamos envases de alta calidad que protegen el producto de la humedad, la luz y otros factores ambientales. Nuestro proceso de envasado se realiza en un entorno controlado para garantizar la higiene y seguridad del producto.</p>
+                  </div>
+              </div>
+          </div>
       </div>
-    </div>
-    <footer
-      class="w-full h-[10vh] bg-[#1E1E1E] text-white flex flex-col items-center justify-center gap-5 | lg:h-[3vh] lg:h-[10vh] lg:flex-row lg:justify-around"
-    >
+  </div>
+  <!--botones swiper-->
+  <div class="swiper-container relative ">
+    <div class="swiper-wrapper  ">
+      </div>
+    <div class="swiper-button-prev absolute bottom-4 left-1/2 -translate-x-1/2 -ml-10 z-10 cursor-pointer" data-aos="fade-up" >
+      </div>
+    <div class="swiper-button-next  absolute bottom-4 left-1/2 translate-x-1/2 ml-10 z-10 cursor-pointer" data-aos="fade-up">
+      </div>
+  </div>
+  <!--terminan botones swiper-->
+  <footer class="w-full min-h-[10vh] bg-[#1E1E1E] text-white flex flex-col items-center justify-center gap-5 p-4 lg:flex-row lg:justify-around lg:gap-0">
       <div class="title-footer text-center">
-        <h6 class="text-[1.3em] | lg:text-[1.5em]">
-          BIO<span class="font-bold">NUTREX</span>
-        </h6>
-        <p class="text-[.8em] | lg:text-[.8em]">powered by Quantum Code</p>
+          <h6 class="text-[1.3em] lg:text-[1.5em]">
+              BIO<span class="font-bold">NUTREX</span>
+          </h6>
+          <p class="text-[.8em]">powered by Quantum Code</p>
       </div>
-      <div
-        class="menu-footer text-white hidden | lg:flex lg:gap-10 lg:text-[.8em]"
-      >
-        <li class="list-none px-2 py-1">
-          <a href="index.html">Inicio</a>
-        </li>
-        <li class="list-none px-2 py-1">
-          <a href="weare.html">We Are</a>
-        </li>
-        <li class="list-none px-2 py-1">
-          <a href="productos.html">Suplementos</a>
-        </li>
-      </div>
+      <nav class="menu-footer text-white hidden lg:flex lg:gap-10 lg:text-[.8em]">
+          <li class="list-none px-2 py-1"><a href="index.html" class="hover:text-gray-300">Inicio</a></li>
+          <li class="list-none px-2 py-1"><a href="weare.html" class="hover:text-gray-300">We Are</a></li>
+          <li class="list-none px-2 py-1"><a href="productos.html" class="hover:text-gray-300">Suplementos</a></li>
+      </nav>
       <div class="social-media flex justify-center items-center gap-5">
-        <p class="hidden | lg:flex lg:text-[1em]">¡Síguenos!</p>
-        <div class="div">
-          <a href="#"
-            ><img
-              class="w-[25px] filter invert | lg:w-[25px]"
-              src="img/instagram-svgrepo-com.svg"
-              alt=""
-          /></a>
-        </div>
-        <div class="div">
-          <a href="#"
-            ><img
-              class="w-[25px] filter invert | lg:w-[25px]"
-              src="img/facebook-svgrepo-com.svg"
-              alt=""
-          /></a>
-        </div>
-        <div class="div">
-          <a href="#"
-            ><img
-              class="w-[25px] filter invert | lg:w-[25px]"
-              src="img/mail-svgrepo-com.svg"
-              alt=""
-          /></a>
-        </div>
+          <p class="hidden lg:flex lg:text-[1em] mr-3">¡Síguenos!</p>
+          <a href="#" aria-label="Instagram">
+              <img class="w-[25px] filter invert hover:opacity-80" src="img/instagram-svgrepo-com.svg" alt="Instagram">
+          </a>
+          <a href="#" aria-label="Facebook">
+              <img class="w-[25px] filter invert hover:opacity-80" src="img/facebook-svgrepo-com.svg" alt="Facebook">
+          </a>
+          <a href="#" aria-label="Email">
+              <img class="w-[25px] filter invert hover:opacity-80" src="img/mail-svgrepo-com.svg" alt="Email">
+          </a>
       </div>
-    </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
+  </footer>
+  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="main.js"></script> <script>
+      // Inicializar AOS
       AOS.init();
-    </script>
+  
+      // Inicializar Swiper
+      const swiper = new Swiper('.swiper', {
+          // Opciones opcionales
+          direction: 'horizontal',
+          loop: false, // Cambiado a false para que el scrollbar/navegación tengan fin
+  
+          // Paginación (descomentar si se necesita)
+          // pagination: {
+          //     el: '.swiper-pagination',
+          //     clickable: true,
+          // },
+  
+          // Navegación con botones
+          navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+          },
+  
+          // Scrollbar
+          scrollbar: {
+              el: '.swiper-scrollbar',
+              hide: false, // Mostrar siempre o auto-ocultar
+              draggable: true,
+          },
+      });
+  </script>
   </body>
-</html>
+  </html>
